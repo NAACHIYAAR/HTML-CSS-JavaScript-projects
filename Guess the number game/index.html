@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess the number</h1>
+<input id="guessnumber" placeholder="Enter the number"><br>
+<button onclick="check()">Check <br></button>
+<p id="result">Your'e Wrong/Right</p>
+<p id="score">Score:10</p>
+<script>
+    var number=document.getElementById("guessnumber")
+    var result=document.getElementById("result")
+    var score=document.getElementById("score")
+    var inputnumber=Number(number.value)
+    var defaultrangenumber=Math.floor(Math.random()*10)+1
+     var Score=10
+    
+    function check(){
+        if(inputnumber==defaultrangenumber){
+            console.log("right")
+            result.textContent="Your'e right"
+            alert("Congrats, You won!!")
+        }else{
+            console.log("wrong")
+            result.textContent="Your'e wrong"
+            Score=Score-1
+            score.textContent="Score:"+Score
+
+        }
+        if(Score==0){
+            score.textContent="Game Over!!"
+        }
+   
+    }
+</script>
+<style>
+    body{
+        margin: 0;
+        flex-direction: column;
+        display: flex;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        background: url(https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8);
+        background-size: cover;
+        width: 1500px;
+        height: 500px;
+        background-color: grey;
+    }
+    h1{
+        padding: 10px;
+        background-color: black;
+        color: floralwhite;
+    }
+    input{
+        background-color: darkgray;
+    }
+    p{
+        background-color: black;
+        color: azure;
+        padding: 5px;
+    }
+    button{
+        background-color: gray;
+    }
+</style>
+</body>
+</html>
