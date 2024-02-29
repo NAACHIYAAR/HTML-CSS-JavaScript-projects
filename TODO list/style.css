@@ -1,22 +1,42 @@
 body{
     margin: 0;
-    font-family:sans-serif;
-    display: flex;
-    background-size:cover;
-    
-    align-items: center;
-    height: 100vh;
     justify-content: center;
-    background:url( https://images.unsplash.com/photo-1705582866703-b4fd3bae6ddd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    font-size: larger;
+    display: flex;
+    padding-top: 100px;
+    background-color: rgb(237, 205, 221);
+}
+.container{
+    background-color: darkgray;
+    width: 500px;
+    height:60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 4px 3px 2px ;
+}
+.list-container{
+      display: flex;
+      position: absolute;
+      background-color:palevioletred;
+      top: 30%;
+      width: 500px;
+      height: 450px;
+      border-radius:10px;
+    box-shadow: 0 4px 5px 3px;
 }
 input{
-    background-color:pink;
-    color: black;
-     
-}
-button{
+    right:40px;
+    position:relative;
+    width: 300px;
+    height: 30px;
     background-color: palevioletred;
-    
+    border-radius: 20px;
+    color:black;
 }
+#btn1{
+    position: relative;
+  background-color: palevioletred;
+  border-radius: 10px;
+  left: 20px;
+}
+
