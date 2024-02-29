@@ -11,18 +11,20 @@
 <body>
     
     <br>
+    <div class="container">
+       
+    <input id="enteritem" placeholder="Enter the plan">
     
-    <input id="enteritem">
-    <br>
-<button onclick="update()">Add <br></button>
+<button id="btn1" onclick="update()">Add <br></button>
+</div>
+<div class="list-container">
 
-<br>
 <ul id="ullist">
-    <li>Plan   
-        <button onclick="deleteitem(event)">Delete</button>
+    <li id="list">Plan   
+        <button id="btn2" onclick="deleteitem(event)">Delete</button>
     </li>
 </ul>
-
+</div>
 <script src="index.js"></script>
 </body>
 </html>
